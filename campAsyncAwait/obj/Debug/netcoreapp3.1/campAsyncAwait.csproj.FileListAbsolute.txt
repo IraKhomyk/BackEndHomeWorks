@@ -1,0 +1,13 @@
+D:\CAMP\campAsyncAwait\bin\Debug\netcoreapp3.1\campAsyncAwait.exe
+D:\CAMP\campAsyncAwait\bin\Debug\netcoreapp3.1\campAsyncAwait.deps.json
+D:\CAMP\campAsyncAwait\bin\Debug\netcoreapp3.1\campAsyncAwait.runtimeconfig.json
+D:\CAMP\campAsyncAwait\bin\Debug\netcoreapp3.1\campAsyncAwait.runtimeconfig.dev.json
+D:\CAMP\campAsyncAwait\bin\Debug\netcoreapp3.1\campAsyncAwait.dll
+D:\CAMP\campAsyncAwait\bin\Debug\netcoreapp3.1\campAsyncAwait.pdb
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.csprojAssemblyReference.cache
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.AssemblyInfoInputs.cache
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.AssemblyInfo.cs
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.csproj.CoreCompileInputs.cache
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.dll
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.pdb
+D:\CAMP\campAsyncAwait\obj\Debug\netcoreapp3.1\campAsyncAwait.genruntimeconfig.cache
