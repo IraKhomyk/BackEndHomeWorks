@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flagman\\Ira\\homeWorkDI\\homeWorkDI\\homeWorkDI.csproj": {}
+    "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\DI\\homeWorkDI\\homeWorkDI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flagman\\Ira\\homeWorkDI\\homeWorkDI\\homeWorkDI.csproj": {
+    "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\DI\\homeWorkDI\\homeWorkDI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flagman\\Ira\\homeWorkDI\\homeWorkDI\\homeWorkDI.csproj",
+        "projectUniqueName": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\DI\\homeWorkDI\\homeWorkDI.csproj",
         "projectName": "homeWorkDI",
-        "projectPath": "C:\\Users\\flagman\\Ira\\homeWorkDI\\homeWorkDI\\homeWorkDI.csproj",
+        "projectPath": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\DI\\homeWorkDI\\homeWorkDI.csproj",
         "packagesPath": "C:\\Users\\flagman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flagman\\Ira\\homeWorkDI\\homeWorkDI\\obj\\",
+        "outputPath": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\DI\\homeWorkDI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\flagman\\AppData\\Roaming\\NuGet\\NuGet.Config",

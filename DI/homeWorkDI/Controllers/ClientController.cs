@@ -12,17 +12,12 @@ namespace homeWorkDI
     [ApiController]
     public class ClientController : ControllerBase
     {
-        private readonly ILogger<ClientController> _logger;
+        Client client = new Client();
 
-        public ClientController(ILogger<ClientController> logger)
-        {
-            _logger = logger;
-        }
 
         [HttpGet]
         public string Get()
         {
-            Client client = new Client();
             client.TicketNumber = "BK12345";
             return client.TicketNumber;
         }
