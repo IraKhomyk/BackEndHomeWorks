@@ -4,14 +4,16 @@ using EFCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFCore.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20210325095758_ManyToManyBookCategory")]
+    partial class ManyToManyBookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -117,54 +119,6 @@ namespace EFCore.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("EFCore.Models.Library", b =>
-                {
-                    b.Property<int>("LibraryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("LibraryId");
-
-                    b.ToTable("Libraries");
-                });
-
-            modelBuilder.Entity("EFCore.Models.Reader", b =>
-                {
-                    b.Property<int>("ReaderId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ReaderName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ReaderId");
-
-                    b.ToTable("Readers");
-                });
-
-            modelBuilder.Entity("EFCore.Models.ReaderLibrary", b =>
-                {
-                    b.Property<int>("ReaderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("LibraryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ReaderId", "LibraryId");
-
-                    b.HasIndex("LibraryId");
-
-                    b.ToTable("ReaderLibrary");
-                });
-
             modelBuilder.Entity("BookCategory", b =>
                 {
                     b.HasOne("EFCore.Models.Book", null)
@@ -200,40 +154,11 @@ namespace EFCore.Migrations
                     b.Navigation("Author");
                 });
 
-            modelBuilder.Entity("EFCore.Models.ReaderLibrary", b =>
-                {
-                    b.HasOne("EFCore.Models.Library", "Library")
-                        .WithMany("ReaderLibraries")
-                        .HasForeignKey("LibraryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EFCore.Models.Reader", "Reader")
-                        .WithMany("ReaderLibraries")
-                        .HasForeignKey("ReaderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Library");
-
-                    b.Navigation("Reader");
-                });
-
             modelBuilder.Entity("EFCore.Models.Author", b =>
                 {
                     b.Navigation("Biography");
 
                     b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("EFCore.Models.Library", b =>
-                {
-                    b.Navigation("ReaderLibraries");
-                });
-
-            modelBuilder.Entity("EFCore.Models.Reader", b =>
-                {
-                    b.Navigation("ReaderLibraries");
                 });
 #pragma warning restore 612, 618
         }

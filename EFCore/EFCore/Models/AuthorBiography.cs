@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace EFCore.Models
 {
-    public class Category
+    public class AuthorBiography
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<Book> Books { get; set; }
+        public string Biography { get; set; }
+        public Author Author{get;set;}
+        public int AuthorId { get; set; }
     }
 }

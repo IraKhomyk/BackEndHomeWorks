@@ -5984,11 +5984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\flagman\\Desktop\\.NET\\EFCore\\EFCore\\EFCore.csproj",
+      "projectUniqueName": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\EFCore\\EFCore\\EFCore.csproj",
       "projectName": "EFCore",
-      "projectPath": "C:\\Users\\flagman\\Desktop\\.NET\\EFCore\\EFCore\\EFCore.csproj",
+      "projectPath": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\EFCore\\EFCore\\EFCore.csproj",
       "packagesPath": "C:\\Users\\flagman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\flagman\\Desktop\\.NET\\EFCore\\EFCore\\obj\\",
+      "outputPath": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\EFCore\\EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\flagman\\AppData\\Roaming\\NuGet\\NuGet.Config",

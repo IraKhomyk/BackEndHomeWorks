@@ -9,7 +9,8 @@ namespace EFCore.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Author { get; set; }
+        public Author Author { get; set; }
+        public ICollection<Category> Categories { get; set; }
         public int PageCount { get; set; }
     }
 }

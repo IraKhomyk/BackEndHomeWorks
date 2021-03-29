@@ -12,5 +12,7 @@ namespace EFCore.Models
         public string LastName { get; set; }
         public int Age { get; set; }
         public string City { get; set; }
+        public ICollection<Book> Books { get; set; }
+        public AuthorBiography Biography { get; set; }
     }
 }

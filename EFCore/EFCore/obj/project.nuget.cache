@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H+dPKhZqN7teqPt0OkXzUA+4W40XiKAtGxkcB0jsLeGoOq72eg5YAEXScO7WBsPaC2fZhGwxaim1fhD9gznnkw==",
+  "dgSpecHash": "zuoME/OSrTxfa3zyCfm5aB5Gxo+TmPKXWQTc0b11vKcqplVsZa4+Xiftc7snKTvuvywsfyp1kmkYdxChI8Vkjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\flagman\\Desktop\\.NET\\EFCore\\EFCore\\EFCore.csproj",
+  "projectFilePath": "C:\\Users\\flagman\\Desktop\\.NET\\BackEndHomeWorks\\EFCore\\EFCore\\EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flagman\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\flagman\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
