@@ -15,6 +15,7 @@ namespace EFCore
         public DbSet<AuthorBiography> AuthorBiographies { get; set; }
         public DbSet<Reader> Readers { get; set; }
         public DbSet<Library> Libraries { get; set; }
+        public DbSet<ReaderLibrary> ReaderLibraries { get; set; }
 
 
         public MyContext(DbContextOptions<MyContext> options) : base(options)
@@ -34,6 +35,8 @@ namespace EFCore
             modelBuilder.Entity<Author>().HasOne(x => x.Biography).WithOne(x => x.Author).HasForeignKey<AuthorBiography>(x => x.AuthorId);
 
             modelBuilder.Entity<Author>().HasMany(x => x.Books).WithOne(x => x.Author);
+
+            modelBuilder.Entity<ReaderLibrary>().ToTable("ReaderLibraries");
 
             modelBuilder.Entity<ReaderLibrary>().HasKey(x => new { x.ReaderId, x.LibraryId });
             modelBuilder.Entity<ReaderLibrary>().HasOne(x => x.Reader).WithMany(x => x.ReaderLibraries).HasForeignKey(x => x.ReaderId);
